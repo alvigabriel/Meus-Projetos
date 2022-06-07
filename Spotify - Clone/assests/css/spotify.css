@@ -205,7 +205,7 @@ body {
     cursor: pointer;
 }
 
-.footer-info .rights .country {
+.footer-info .rights .country:hover {
     color: var(--default-green);
 }
 
