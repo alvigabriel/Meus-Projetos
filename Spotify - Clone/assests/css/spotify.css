@@ -18,7 +18,7 @@ body {
 
 .btn-primary {
     background-color: var(--default-green);
-    color: white;
+    color: mediumblue;
     text-transform: uppercase;
     padding: 15px 60px;
     border-radius: 30px;
@@ -41,48 +41,45 @@ body {
 
 #navbar {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.6);
-    justify-content: center;
+    background-color: black;
     color: white;
-    position: fixed;
-    top: 0;
     width: 100%;
-}
-
-#navbar .navbar-container {
-    width: 60%;
-    display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 20px 100px;
+    height: 80px;
+  
+    
 }
 
 
 
-#navbar .navbar-container ul {
+
+#navbar .nav-items ul {
     display: flex;
     list-style: none;
     font-weight: bold;
+    font-size: 0.95rem;
 }
 
-#navbar .navbar-container ul li {
+#navbar .nav-items ul li {
     padding: 0 20px;
     transition: all 300ms ease;
 }
 
-#navbar .navbar-container ul li:hover {
+#navbar .nav-items ul li:hover {
     color: var(--default-green);
     cursor: pointer;
 }
 
-#navbar .navbar-container ul li:nth-child(3) {
+#navbar .nav-items li:nth-child(3) {
     border-right: 1px solid white;
 }
 
 /* Showcase */
 
 #showcase {
-    height: 100vh;
+    height: 130vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,21 +87,32 @@ body {
     background: url(../img/ilias-chebbi-2gpfqhEFVZ8-unsplash.jpg);
     background-color: rgba(1, 49, 75, 0.6);
     background-blend-mode: color;
+    min-height: 80%;
+
 }
 
 #showcase .showcase-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 0;
+
 }
 
 #showcase .showcase-container h2 {
-    font-size: 5rem;
+    font-size: 9.75rem;
+    color: var(--default-green);
+    text-align: center;
+    font-weight: bold;
+
 }
 
 #showcase .showcase-container p {
     margin: 15px 0;
     font: 1.1rem;
+    color: var(--default-green);
+    font-weight: bold;
+    padding-bottom: 30px;
 }
 
 /* footer */
@@ -113,13 +121,15 @@ body {
     background: black;
     color: white;
     padding: 80px 0;
+    
+    
 }
 
 #footer .footer-content {
     display: flex;
-    width: 60%;
-    margin: auto;
-    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-evenly;
 }
 
 #footer .footer-content .footer-menu {
@@ -151,6 +161,7 @@ body {
 
 .socials {
     display: flex;
+    
 }
 
 .socials i {
@@ -158,6 +169,13 @@ body {
     font-size: 1.7rem;
     transition: all 300ms ease;
     cursor: pointer;
+    background-color: rgb(60, 59, 59);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 13px;
+    border-radius: 50%;
+    
 }
 
 .socials i:hover {
@@ -170,12 +188,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: 60%;
+    width: 100%;
     margin: auto;
     font-weight: bold;
     color: #919496;
     font-size: 0.75rem;
-    padding-top: 50px;
+    padding: 50px 100px;
+    padding-bottom: 20px;
 
 }
 
