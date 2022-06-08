@@ -88,6 +88,7 @@ body {
     background-color: rgba(1, 49, 75, 0.6);
     background-blend-mode: color;
     min-height: 80%;
+    transition: all 100ms ease-in-out;
 
 }
 
@@ -120,7 +121,7 @@ body {
 #footer {
     background: black;
     color: white;
-    padding: 80px 0;
+    padding: 80px 20px;
     
     
 }
@@ -236,3 +237,165 @@ body {
 
 }
 
+/*mobile */
+@media(max-width: 992px){
+
+    .logo {
+        height: 30px;
+        width: auto;
+    }
+
+    #navbar .nav-items ul {
+        
+        font-size: 0.80rem;
+    }
+
+    #showcase {
+        height: 130vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background: url(../img/ilias-chebbi-2gpfqhEFVZ8-unsplash.jpg);
+        background-color: rgba(1, 49, 75, 0.6);
+        background-blend-mode: color;
+        min-height: 80%;
+        background-position: 30%;
+        transition: all 100ms ease-in-out;
+    
+    }
+
+    #footer {
+        background: black;
+        color: white;
+        padding: 80px 20px;
+        
+        
+    }
+
+    #footer .footer-info .rights p {
+        text-align: right;
+    }
+
+}
+
+@media(max-width: 759px) {
+
+    #navbar {
+        display: flex;
+        background-color: black;
+        color: white;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px 80px;
+        height: 10vh;
+      
+        
+    }
+
+    #navbar .nav-items ul {
+        
+        font-size: 0.75rem;
+    }
+
+    #footer {
+        padding: 20 90px;
+    }
+
+    #footer .footer-content  {
+       
+        font-size: 0.80rem;
+        
+       
+    }
+
+    #footer .footer-content .socials i {
+        font-size: 1.4rem;
+        width: 40px; 
+        height: 40px;   
+        padding-top: 10px;
+    }
+    
+    .footer-info {
+
+        font-size: 0.70rem;
+        padding: 0px 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+
+    }
+
+}
+
+@media(max-width: 655px) {
+
+    .logo {
+        height: 25px;
+        width: auto;
+    }
+
+    #navbar {
+        display: flex;
+        background-color: black;
+        color: white;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px 20px;
+        height: 10vh;
+      
+        
+    }
+
+    #navbar .nav-items ul {
+        
+        font-size: 0.75rem;
+        padding-bottom: 5px;
+    }
+
+    #footer  {
+        
+        padding: 40px 80px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+
+        
+    
+    }
+
+    #footer .footer-content  {
+       
+        font-size: 0.70rem;
+      
+        
+       
+       
+        
+       
+    }
+
+    #footer .footer-content .socials i {
+        font-size: 1.4rem;
+        width: 40px; 
+        height: 40px;   
+        padding-top: 10px;
+        
+    }
+    
+    .footer-info {
+
+        font-size: 0.70rem;
+        padding: 0px 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+
+    }
+
+}
