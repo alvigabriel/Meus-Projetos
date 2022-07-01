@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <main id="main">
+        <h1 class="title">
+            Biblioteca
+        </h1>
+
+            <div class="button">
+                <button>Retirar um livro</button>
+                <button>Devolver um livro</button>
+                <button>Doar um livro</button>
+            </div>
+          
+    
+            <div class="dados">
+                <input type="text" id="numero" placeholder="Número" autocomplete="off">
+                <input type="text" id="titulo" placeholder="Título" autocomplete="off">
+                <input type="text" id="autor" placeholder="Autor" autocomplete="off">
+                <input type="text" id="ano" placeholder="Ano" autocomplete="off">
+                <input type="text" id="emprestado" placeholder="Emprestar para:" autocomplete="off">
+                
+                <button class="add">↵</button>
+            </div>
+    
+            <table class="biblio-container">
+                    <thead>
+                        <tr>
+                           <th>Número</th>
+                           <th>Título</th>
+                           <th>Autor</th>
+                           <th>Ano</th>
+                           <th>Status</th>
+                           <th>Emprestado para: </th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody id="biblio-body">
+                        <p>Teste</p>
+                    </tbody>
+            </table>
+       
+    </main>
+    
+    <script src="./src/index.js"></script>
+</body>
+</html>
