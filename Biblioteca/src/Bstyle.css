@@ -1,6 +1,14 @@
+:root {
+    --primary-color: rgb(221, 221, 221);  
+  }
+  
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    
 
 }
 
@@ -8,31 +16,35 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(243, 243, 243);
 }
 #mesa {
     width: 80vw;
     height: 11vh;
 }
 #main {
-   background-color: aqua;
-   margin: 20px;
+    background-color: var(--primary-color);
+   margin: 100px 20px;
    padding: 20px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    width: 100%;
-   height: 40vh;
+   height: auto;
 
 }
 
 
 .button{
+    border: 0.5px gray solid;
+    border-radius: 4px;
     padding: 10px 0;
-    background-color: red;
+    background-color: rgb(195, 195, 195);
     display: flex;
     align-items: center;
-    width: 80vw;
+    min-width: 80vw;
+    justify-content: center;
 }
 
 button{
@@ -42,43 +54,81 @@ button{
     margin: 0 5px;
     border-radius: 4px;
     padding: 5px;
+    transition: all 100ms ease-in-out;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(152, 220, 50);
+    transform: scale(105%);
+}
+
+#data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .dados{
-    background-color: green;
+    background-color: var(--primary-color);
     margin-bottom: 8px;
-    padding: 10px 5px;
+    padding: 10px 0px;
     padding-bottom: 10px;
+    width: 80vw;
+    border-radius: 5px;
+   
   
 }
 
 .dados input{
     margin-top: 3px;
+    margin-left: 15px;
     border-radius: 2px;
     border: 0;
     padding: 1.5px;
-    width: 110px;
+    max-width: 110px;
+
 }
 
 
 .biblio-container {
-    background-color: yellow;
-    display: flex;
+    background-color: rgb(48, 48, 48);
+    /* display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
-    padding-left: 10px;
-    font-weight: bold;
+    align-items: center; */
+    /* padding-left: 10px; */
+    /* font-weight: bold; */
+    width: 80vw;
+    justify-content: space-around;
+    width: 80vw;
+    margin: 100px;
+    color: rgb(68, 68, 68);
 
    
+}
+
+.biblio-container thead {
+    background-color: rgb(195, 195, 195);
+    width: 80vw;
+    margin: 100px;
+    
 }
 
 .add {
     width: 50px;
     font-size: 18px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 #biblio-body {
-    background-color: purple;
-    color: purple;
+    background-color: var(--primary-color);
+    color: white;
+   
+}
+
+#biblio-body tr td{
+    padding: 0.5rem;
 }
