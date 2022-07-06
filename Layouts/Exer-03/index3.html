@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boletim</title>
-    <link rel="stylesheet" href="./Exer-03/assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
     <main id="main">
@@ -13,19 +13,19 @@
             <h1>Boletim</h1>
             <h3>Adicione os dados dos alunos</h3>
 
-            <span id="data">
+            <form id="data">
                 <div class="dados">
-                    <input type="text" id="name" placeholder="nome" autocomplete="off">
-                    <input type="text" id="1-semestre" placeholder=" Nota do 1º semestre" autocomplete="off">
-                    <input type="text" id="2-semestre" placeholder="Nota do 2º semestre" autocomplete="off">
-                    <input type="text" id="final" placeholder="Nota final" autocomplete="off">
-                    <input type="text" id="freq" placeholder="Porcentagem frequência" autocomplete="off">
+                    <input type="text" id="nome" placeholder="nome" autocomplete="off" name="nome">
+                    <input type="number" id="semestre1" placeholder=" Nota do 1º semestre" autocomplete="off" name="semestre1">
+                    <input type="text" id="semestre2" placeholder="Nota do 2º semestre" autocomplete="off" name="semestre2">
+                    <input type="text" id="final" placeholder="Nota final" autocomplete="off" name="final">
+                    <input type="text" id="freq" placeholder="Porcentagem frequência" autocomplete="off" name="freq">
                     
-                    <input type="submit" class="add"></button>
+                    <input type="submit" id="add"></input>
                 </div>
-            </span>   
+            </form>   
             
-                <table class="table">
+                <table id="table">
                     <thead>
                         <tr>
                             <th></th>
@@ -38,16 +38,47 @@
                         
                     </thead>
 
-                    <tbbody id="body">
-                        <tr>
-                            <td>teste</td>
+                    <tbody id="body">
+                        <tr class="aluno">
+                            <td>1</td>
+                            <td class="td-nome">João Luiz</td>
+                            <td class="td-sem1">6.5</td>
+                            <td class="td-sem2">7.8</td>
+                            <td class="td-final">7.2</td>
+                            <td class="td-freq">90%</td>
                         </tr>
-                    </tbbody>
+                        <tr class="aluno">
+                            <td >2</td>
+                            <td class="td-nome">Maria Luz</td>
+                            <td class="td-sem1">8.5</td>
+                            <td class="td-sem2">8.5</td>
+                            <td class="td-final">8.5</td>
+                            <td class="td-freq">55%</td>
+                        </tr>
+                        <tr class="aluno">
+                            <td>3</td>
+                            <td>Fulano Silva</td>
+                            <td class="td-sem1">6.0</td>
+                            <td class="td-sem2">4.0</td>
+                            <td class="td-final">5.0</td>
+                            <td class="td-freq">97.2%</td>
+                        </tr>
+                        <tr class="aluno">
+                            <td>4</td>
+                            <td class="td-nome">Beltrano Luiz</td>
+                            <td class="td-sem1">6.5</td>
+                            <td class="td-sem2">7.5</td>
+                            <td class="td-final">7.0</td>
+                            <td class="td-freq">87.6%</td>
+                        </tr>
+                       
+                    </tbody>
                 </table>
            
         </span>
     </main>
 
-    <script src="./Exer-03/assets/script.js"></script>
+    <script src="./assets/formulario.js"></script>
+    <script src="./assets/calculos.js"></script>
 </body>
 </html>

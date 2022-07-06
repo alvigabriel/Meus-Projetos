@@ -65,19 +65,20 @@ body{
 
 }
 
-.table {
+#table {
 
     width: 80vw;
     justify-content: space-around;
-    width: 70vw;
+    height: auto;
     margin: 100px;
     color: rgb(68, 68, 68);
     border: 1px solid black;
+    background-color: whitesmoke;
 
    
 }
 
-.table thead {
+#table thead {
     background-color: rgb(208, 218, 214);
     width: 80vw;
     margin: 100px;
@@ -93,7 +94,7 @@ th {
 
 #body {
     color: rgb(68, 68, 68);
-    background-color: blueviolet;
+    
     
    
 }
