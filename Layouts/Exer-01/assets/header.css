@@ -1,0 +1,59 @@
+@import url(./global.css);
+
+body {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#container-pai {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 750px;
+    height: 100vh;
+   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.menu{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.header {
+    background-color: blue;
+    width: 100%;
+    height: 100px;
+    
+}
+
+
+
+.left {
+    background-color: brown;
+    width: 150px;
+    height: 30vh;
+}
+
+#main {
+    background-color: yellowgreen;
+    width: 450px;
+    height: 40vh;
+}
+
+.right {
+    background-color: green;
+    width: 150px;
+    height: 30vh;
+}

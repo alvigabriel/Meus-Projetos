@@ -54,4 +54,5 @@ interface livro {
 
         biblio().adicionar({ numero: Number(), titulo, autor, ano: Number(), emprestado})
     });
+
 })();
