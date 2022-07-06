@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/Bstyle.css">
 </head>
 <body>
     <main id="main">
@@ -14,12 +14,12 @@
         </h1>
 
             <div class="button">
-                <button>Retirar um livro</button>
-                <button>Devolver um livro</button>
-                <button>Doar um livro</button>
+                <button id="retirar">Retirar um livro</button>
+                <button id="devolver">Devolver um livro</button>
+                <button id="doar">Doar um livro</button>
             </div>
           
-    
+        <span id="data">
             <div class="dados">
                 <input type="text" id="numero" placeholder="Número" autocomplete="off">
                 <input type="text" id="titulo" placeholder="Título" autocomplete="off">
@@ -29,6 +29,8 @@
                 
                 <button class="add">↵</button>
             </div>
+        </span>    
+            
     
             <table class="biblio-container">
                     <thead>
@@ -43,12 +45,45 @@
                     </thead>
                     
                     <tbody id="biblio-body">
-                        <p>Teste</p>
+                        <tr>
+                            <td>0001</td>
+                            <td>Como fazer sentido e bater o martelo</td>
+                            <td>Alexandro Aolchique</td>
+                            <td>2017</td>
+                            <td>Disponível</td>
+                            <td></td>
+                            <td>
+                                <button id="devolver">Devolver</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>0002</td>
+                            <td>Sejamos todos feministas</td>
+                            <td>Chimamanda Ngozi Adichie</td>
+                            <td>2015</td>
+                            <td>Disponível</td>
+                            <td></td>
+                            <td>
+                                <button id="devolver">Devolver</button>
+                            </td>
+                        </tr>  
+                        <tr>
+                            <td>0003</td>
+                            <td>Basquete 101</td>
+                            <td>Autor: Hortência Marcari</td>
+                            <td>2010</td>
+                            <td>Disponível</td>
+                            <td></td>
+                            <td>
+                                <button id="devolver">Devolver</button>
+                            </td>
+                        </tr>     
+                                          
                     </tbody>
             </table>
        
     </main>
     
-    <script src="./src/index.js"></script>
+    <script src="./src/Bindex.js"></script>
 </body>
 </html>
